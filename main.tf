@@ -15,7 +15,7 @@ resource "null_resource" "sleep" {
 triggers = {
 time = timestamp ()
 }
-count = var.condition ? 1 : 3
+count = var.condition ? 10000 : 3
   provisioner "local-exec" {
     command = <<EOT
     echo 'Hello World'
