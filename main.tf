@@ -6,7 +6,7 @@ terraform {
     }
   }
 }
-
+#123
 variable "condition" {
   default = false
 }
